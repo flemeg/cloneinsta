@@ -1,0 +1,12 @@
+{
+  "name": "cloneinsta",
+  "displayName": "cloneinsta",
+  "expo": {
+    "name": "cloneinsta",
+    "slug": "cloneinsta",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
