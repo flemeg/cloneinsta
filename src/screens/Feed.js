@@ -7,17 +7,7 @@ import Post from '../components/Post'
 class Feed extends Component {
 
     state = {
-        posts: [{
-            id: Math.random(),
-            nickname: 'AAAAAAAAAAAAA',
-            email: 'ddddddd@gdddddd.com',
-            image: require('../../assets/imgs/fence.jpg'),
-            comments: [{
-                nickname: 'BBBBBBBBBBBB',
-                comment: 'CCCCCCCCC dd'
-            }]
-
-        }]
+        posts: []
     }
 
     render() {
@@ -25,12 +15,24 @@ class Feed extends Component {
         const DATA = [
             {
                 id: Math.random(),
-                nickname: 'AAAAAAAAAAAAA',
-                email: 'ddddddd@gdddddd.com',
+                name: 'Flemeg Balla',
+                nickname: 'Balla',
+                email: 'flemeg@gmail.com',
                 image: require('../../assets/imgs/fence.jpg'),
                 comments: [{
-                    nickname: 'BBBBBBBBBBBB',
-                    comment: 'CCCCCCCCC dd'
+                    nickname: 'Xuxinha',
+                    comment: 'Foto do krai'
+                }]
+            },
+            {
+                id: Math.random(),
+                name: 'Daniel',
+                nickname: 'Xuxinha',
+                email: 'daniel.cdesouza@gmail.com',
+                image: require('../../assets/imgs/car2.jpg'),
+                comments: [{
+                    nickname: 'Flemeg',
+                    comment: 'Me xama pra da uma volta'
                 }]
             },
         ]
@@ -40,7 +42,6 @@ class Feed extends Component {
         return (
             <SafeAreaView style={styles.container}>
                 <Header />
-                <Text>Meu Teste</Text>
                 <FlatList
                     data={DATA}
                     keyExtractor={item => `${item.id}`}
