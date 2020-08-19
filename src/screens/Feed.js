@@ -21,7 +21,7 @@ class Feed extends Component {
                 image: require('../../assets/imgs/fence.jpg'),
                 comments: [{
                     nickname: 'Xuxinha',
-                    comment: 'Foto do krai'
+                    comment: 'Ismal bebao'
                 }]
             },
             {
