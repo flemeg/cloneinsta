@@ -18,7 +18,7 @@
 
 ## 🔖&nbsp; Sobre
 
-O projeto **CloneInsta** é um app que simula alguams das funcionalidades do aplicativo Instagram(instagram.com) que foi criado dentro do curso da **Udemy(https://www.udemy.com/course/curso-react-native/)** com o intuito de colocarmos em prática todo conteúdo estudado durante o curso.
+O projeto **CloneInsta** é um app que simula alguams das funcionalidades do aplicativo Instagram(instagram.com) que foi criado dentro do curso da **[Udemy](https://www.udemy.com/course/curso-react-native/)** com o intuito de colocarmos em prática todo conteúdo estudado durante o curso.
 
 ---
 
