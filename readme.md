@@ -2,6 +2,8 @@
     <img src="https://ik.imagekit.io/kep5aig5ks/bfc83ad4-5764-49a0-817d-41bcb696f93f_200x200_ffSdTq6gS.png">
 </h1>
 
+![ScreenShot](https://ik.imagekit.io/kep5aig5ks/bfc83ad4-5764-49a0-817d-41bcb696f93f_200x200_ffSdTq6gS.png)
+
 <h1>
     <img src="public/apresentacao.gif">
 </h1>
@@ -29,7 +31,7 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - [ReactJS](https://reactjs.org)
 - [Redux](https://redux.org)
 - [Axios](https://github.com/axios/axios)
-- [Firebase](firebase.google.com/)
+- [Firebase](https://firebase.google.com/)
 
 ---
 
