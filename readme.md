@@ -2,8 +2,6 @@
     <img src="https://ik.imagekit.io/kep5aig5ks/bfc83ad4-5764-49a0-817d-41bcb696f93f_200x200_ffSdTq6gS.png">
 </h1>
 
-![ScreenShot](https://ik.imagekit.io/kep5aig5ks/bfc83ad4-5764-49a0-817d-41bcb696f93f_200x200_ffSdTq6gS.png)
-
 <h1>
     <img src="public/apresentacao.gif">
 </h1>
@@ -28,7 +26,7 @@ O projeto **CloneInsta** é um app que simula alguams das funcionalidades do apl
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias
 
-- [ReactJS](https://reactjs.org)
+- [React-Native](https://reactnative.dev/)
 - [Redux](https://redux.org)
 - [Axios](https://github.com/axios/axios)
 - [Firebase](https://firebase.google.com/)
