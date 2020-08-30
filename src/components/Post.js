@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import { StyleSheet, View, Image, Dimensions } from 'react-native'
 import Author from './Author'
 import Comments from './Comments'
@@ -31,4 +32,10 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Post
+const mapStateToProps = ({ user }) => {
+    return {
+        name: user.name
+    }
+}
+
+export default connect(mapStateToProps)(Post)
