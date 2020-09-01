@@ -4,14 +4,17 @@ import { Provider } from 'react-redux'
 import Navigator from './src/Navigator'
 import storeConfig from './src/store/storeConfig'
 import { render } from 'react-dom'
+import axios from 'axios'
+
+axios.defaults.baseURL = 'https://cloneinsta-8ee25.firebaseio.com/'
 
 const store = storeConfig()
-const Redux = () => {   
-        return (
-            <Provider store={store}>
-                <Navigator />
-            </Provider>
-        )    
+const Redux = () => {
+    return (
+        <Provider store={store}>
+            <Navigator />
+        </Provider>
+    )
 }
 
 // registerRootComponent calls AppRegistry.registerComponent('main', () => App);
