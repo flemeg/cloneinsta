@@ -12,14 +12,19 @@ import {
 
 class Login extends Component {
     state = {
-        name: 'Temp',
+        name: 'Tempo',
         email: '',
         password: ''
     }
 
+    componentDidUpdate = prevProps => {
+        if (prevProps.isLoading && !this.props.isLoading) {
+            this.props.navigation.navigate('Profile')
+        }
+    }
+
     login = () => {
-        this.props.onLogin({ ...this.state })
-        this.props.navigation.navigate('Profile')
+        this.props.onLogin({ ...this.state })        
     }
 
     render() {
@@ -76,10 +81,16 @@ const styles = StyleSheet.create({
     }
 })
 
+const mapStateToProps = ({ user }) => {
+    return {
+        isLoading: user.isLoading
+    }
+}
+
 const mapDispatchToProps = dispatch => {
     return {
         onLogin: user => dispatch(login(user))
     }
 }
 
-export default connect(null, mapDispatchToProps)(Login)
+export default connect(mapStateToProps, mapDispatchToProps)(Login)

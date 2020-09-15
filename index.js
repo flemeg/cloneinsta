@@ -5,6 +5,7 @@ import Navigator from './src/Navigator'
 import storeConfig from './src/store/storeConfig'
 import { render } from 'react-dom'
 import axios from 'axios'
+import App from './src/App'
 
 axios.defaults.baseURL = 'https://cloneinsta-8ee25.firebaseio.com/'
 
@@ -12,7 +13,7 @@ const store = storeConfig()
 const Redux = () => {
     return (
         <Provider store={store}>
-            <Navigator />
+            <App />
         </Provider>
     )
 }

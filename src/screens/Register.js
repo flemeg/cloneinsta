@@ -6,13 +6,27 @@ import {
     TouchableOpacity,
     TextInput
 } from 'react-native'
+import { connect } from 'react-redux'
+import { createUser } from '../store/actions/user'
 
 class Register extends Component {
     state = {
-        nome: '',
+        name: '',
         email: '',
         password: ''
     }
+
+    componentDidUpdate = prevProps => {
+        if (prevProps.isLoading && !this.props.isLoading) {
+            this.setState({
+                name: '',
+                email: '',
+                password: ''
+            })
+            this.props.navigation.navigate('Profile') // Feed
+        }
+    }
+
 
     render() {
         return (
@@ -64,4 +78,16 @@ const styles = StyleSheet.create({
     }
 })
 
-export default Register
+const mapStateToProps = ({ user }) => {
+    return {
+        isLoading: user.isLoading
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        onCreateUser: user => dispatch(createUser(user))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Register)
